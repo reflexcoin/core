@@ -1,0 +1,21 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/reflex_bg.qm</file>
+        <file alias="de">locale/reflex_de.qm</file>
+        <file alias="en">locale/reflex_en.qm</file>
+        <file alias="es">locale/reflex_es.qm</file>
+        <file alias="fi">locale/reflex_fi.qm</file>
+        <file alias="fr">locale/reflex_fr.qm</file>
+        <file alias="it">locale/reflex_it.qm</file>
+        <file alias="ja">locale/reflex_ja.qm</file>
+        <file alias="nl">locale/reflex_nl.qm</file>
+        <file alias="pl">locale/reflex_pl.qm</file>
+        <file alias="pt">locale/reflex_pt.qm</file>
+        <file alias="ru">locale/reflex_ru.qm</file>
+        <file alias="sk">locale/reflex_sk.qm</file>
+        <file alias="sv">locale/reflex_sv.qm</file>
+        <file alias="vi">locale/reflex_vi.qm</file>
+        <file alias="zh_CN">locale/reflex_zh_CN.qm</file>
+        <file alias="zh_TW">locale/reflex_zh_TW.qm</file>
+    </qresource>
+</RCC>

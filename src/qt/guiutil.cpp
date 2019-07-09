@@ -134,7 +134,7 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
 #if QT_VERSION >= 0x040700
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
-    widget->setPlaceholderText(QObject::tr("Enter a Reflex address (e.g. %1)").arg(
+    widget->setPlaceholderText(QObject::tr("Enter a Dash address (e.g. %1)").arg(
         QString::fromStdString(DummyAddress(Params()))));
 #endif
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
@@ -752,8 +752,8 @@ boost::filesystem::path static GetAutostartFilePath()
 {
     std::string chain = ChainNameFromCommandLine();
     if (chain == CBaseChainParams::MAIN)
-        return GetAutostartDir() / "reflex.desktop";
-    return GetAutostartDir() / strprintf("reflex-%s.lnk", chain);
+        return GetAutostartDir() / "reflexcore.desktop";
+    return GetAutostartDir() / strprintf("reflexcore-%s.lnk", chain);
 }
 
 bool GetStartOnSystemStartup()
@@ -792,7 +792,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         if (!optionFile.good())
             return false;
         std::string chain = ChainNameFromCommandLine();
-        // Write a reflex.desktop file to the autostart directory:
+        // Write a reflexcore.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         if (chain == CBaseChainParams::MAIN)
@@ -928,7 +928,7 @@ QString getThemeName()
     if(!theme.isEmpty()){
         return theme;
     }
-    return QString("light");  
+    return QString("drkblue");  
 }
 
 // Open CSS when configured
@@ -943,8 +943,8 @@ QString loadStyleSheet()
         cssName = QString(":/css/") + theme; 
     }
     else {
-        cssName = QString(":/css/light");  
-        settings.setValue("theme", "light");
+        cssName = QString(":/css/drkblue");  
+        settings.setValue("theme", "drkblue");
     }
     
     QFile qFile(cssName);      

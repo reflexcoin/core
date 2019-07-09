@@ -30,7 +30,7 @@ class QUrl;
 class QWidget;
 QT_END_NAMESPACE
 
-/** Utility functions used by the Reflex Qt UI.
+/** Utility functions used by the Dash Qt UI.
  */
 namespace GUIUtil
 {
