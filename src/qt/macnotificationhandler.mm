@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.reflex.Reflex-Qt";
+        return @"org.reflex.Dash-Qt";
     } else {
         return [self __bundleIdentifier];
     }

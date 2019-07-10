@@ -72,10 +72,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case RFLX: return QString("Reflex");
-            case mRFLX: return QString("Milli-Reflex (1 / 1" THIN_SP_UTF8 "000)");
-            case uRFLX: return QString("Micro-Reflex (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-Reflex (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case RFLX: return QString("Dash");
+            case mRFLX: return QString("Milli-Dash (1 / 1" THIN_SP_UTF8 "000)");
+            case uRFLX: return QString("Micro-Dash (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case duffs: return QString("Ten Nano-Dash (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -83,10 +83,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case RFLX: return QString("TestReflexs");
-            case mRFLX: return QString("Milli-TestReflex (1 / 1" THIN_SP_UTF8 "000)");
-            case uRFLX: return QString("Micro-TestReflex (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-TestReflex (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case RFLX: return QString("TestDashs");
+            case mRFLX: return QString("Milli-TestDash (1 / 1" THIN_SP_UTF8 "000)");
+            case uRFLX: return QString("Micro-TestDash (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case duffs: return QString("Ten Nano-TestDash (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
